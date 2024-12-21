@@ -1,3 +1,68 @@
+<style>
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+article {
+  padding: 5em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: white;
+  background-color: var(--bg-color, #fff);
+  color: var(--color, #000);
+  transition: 250ms;
+}
+
+#switcher {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  top: 1rem;
+  right: 1rem;
+  width: 4em;
+  height: 2em;
+  background-color: var(--color, #000);
+  border-radius: 2em;
+  font-size: 20px;
+}
+
+#switcher::after {
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  width: 1.5em;
+  height: 1.5em;
+  content: "";
+  background-color: var(--bg-color, #fff);
+  border-radius: 2em;
+  transform: translateX(var(--translate, 0));
+  transition: 250ms;
+}
+
+#switcher:checked {
+  --translate: 2em;
+  --bg-color: #424242;
+  --color: #81d4fa;
+}
+
+#switcher:checked ~ * {
+  --bg-color: #424242;
+  --color: #81d4fa;
+}
+</style>
+
+<input type="checkbox" id="switcher">
+<div class="body">
+<article>
+
 Hi, I'm Paul.
 **Software engineer** with more than 4 years of working experience.
 
@@ -42,7 +107,7 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
   <input type="email" id="email" name="email" required><br>
     
   <label for="message">Your message</label><br>
-  <textarea id="message" name="body" cols="30" rows="5" required></textarea><br><br>
+  <textarea id="message" name="body" cols="40" rows="5" required></textarea><br><br>
   
   <button type="submit">Submit</button>
 </form>
@@ -60,4 +125,7 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
 
 <div style="margin: auto; text-align: right;">
   © 2024 Paul CHARLES
+</div>
+
+</article>
 </div>
