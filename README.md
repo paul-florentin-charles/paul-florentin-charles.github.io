@@ -3,8 +3,7 @@ Hi, I'm Paul.
 
 I speak fluently _French_, _English_ and _Spanish_ along with some _Catalan_.
 
-
-- Backend developer – DevOps
+- Backend developer – DevOps.
 - Writer and culture aficionado.
 
 ## Experience
@@ -13,11 +12,12 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
 
 ## Portfolio
 
-### As a developer
+### Code
 
 1. <a target="_blank" href="https://github.com/paul-florentin-charles/bcn-rainfall-models/">Analysis and visualisation of Barcelona rainfall</a>.
-2. <a target="_blank" href="https://github.com/paul-florentin-charles/dereverberation-ml/">Remove reverberation via Deep Learning</a>.
+2. <a target="_blank" href="https://github.com/paul-florentin-charles/dereverberation-ml/">Removal of reverberation via Deep Learning</a>.
 3. <a target="_blank" href="https://github.com/paul-florentin-charles/TOSCA-Validator/tree/master/frontend/">Frontend of a webapp validating TOSCA NFV files</a>.
+4. <a target="_blank" href="https://github.com/paul-florentin-charles/Youtube-Playlist-Maker/">Generate YouTube playlist URLs</a>.
 
 ### Miscellaneous
 
@@ -33,6 +33,8 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
 ### Contact me
 
 <form action="https://formsubmit.co/1fac7b1a2dda22da078a09d344d31dec" method="POST" target="_blank">
+  <input type="hidden" name="_subject" value="New contact from personal website!">
+  
   <label for="name">Your name</label><br>
   <input type="text" id="name" name="name" required><br>
 
@@ -40,7 +42,7 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
   <input type="email" id="email" name="email" required><br>
     
   <label for="message">Your message</label><br>
-  <textarea id="message" name="body" cols="30" rows="5" required></textarea><br>
+  <textarea id="message" name="body" cols="30" rows="5" required></textarea><br><br>
   
   <button type="submit">Submit</button>
 </form>
@@ -48,10 +50,10 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
 ---
 
 <div style="margin: auto; text-align: center;">
-  <a target="_blank" href="https://www.linkedin.com/in/paul-charles-6a49ba12b/"><img height="20px" src="/static/img/linkedin.svg" alt="LinkedIn"></a>
-  <a target="_blank" href="https://www.malt.fr/profile/paulcharles/"><img height="20px" src="/static/img/malt.svg" alt="Malt"></a>
-  <a target="_blank" href="https://github.com/paul-florentin-charles/"><img height="20px" src="/static/img/github.svg" alt="GitHub"></a>
-  <a target="_blank" href="https://medium.com/@paul.florentin.charles/"><img height="20px" src="/static/img/medium.svg" alt="Medium"></a>
+  <a target="_blank" href="https://www.linkedin.com/in/paul-charles-6a49ba12b/"><img height="25px" src="/static/img/linkedin.svg" alt="LinkedIn"></a>
+  <a target="_blank" href="https://www.malt.fr/profile/paulcharles/"><img height="25px" src="/static/img/malt.svg" alt="Malt"></a>
+  <a target="_blank" href="https://github.com/paul-florentin-charles/"><img height="25px" src="/static/img/github.svg" alt="GitHub"></a>
+  <a target="_blank" href="https://medium.com/@paul.florentin.charles/"><img height="25px" src="/static/img/medium.svg" alt="Medium"></a>
 </div>
 
 ---
