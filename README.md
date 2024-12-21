@@ -42,7 +42,7 @@ Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_
   <input type="email" id="email" name="email" required><br>
     
   <label for="message">Your message</label><br>
-  <textarea id="message" name="body" cols="30" rows="5" required></textarea><br><br>
+  <textarea id="message" name="body" cols="40" rows="5" required></textarea><br><br>
   
   <button type="submit">Submit</button>
 </form>
