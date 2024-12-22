@@ -4,15 +4,18 @@ body {
     margin: 0;
 }
 
+h2, h3 {
+    color: var(--title-color, #802a18);
+    margin-bottom: 0.5em;
+}
+
 h2 {
     font-weight: 700;
-    margin-bottom: 0.5em;
 }
 
 
 h3 {
     font-weight: 600;
-    margin-bottom: 0.5em;
 }
 
 a:link {
@@ -29,13 +32,14 @@ a:hover {
 }
 
 hr {
-    border: 1px solid var(--color, #000);
+    border: 1px solid var(--title-color, #802a18);
     border-radius: 1px;
     width: 95%;
     margin-left: 0;
 }
 
 hr.thick {
+    border-color: var(--color, #4a1308);
     border-width: 2px;
     margin: 15px 0;
     width: 100%;
@@ -71,6 +75,9 @@ div.label {
 
 input, textarea {
     border-radius: 5px;
+    background-color: var(--color, rgba(244, 236, 222, 0.65));
+    font-family: "Times New Roman", serif;
+    padding: 0.3em 0.4em;
 }
 
 #switcher {
@@ -104,11 +111,13 @@ input, textarea {
     --translate: 2em;
     --bg-color: #424242;
     --color: #eee6dc;
+    --title-color: #eaddc6;
 }
 
 #switcher:checked ~ * {
     --bg-color: #424242;
     --color: #eee6dc;
+    --title-color: #eaddc6;
 }
 
 #copyright {
