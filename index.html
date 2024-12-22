@@ -1,127 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Paul Charles | Personal Website – Portfolio & more </title>
+    <link rel="stylesheet" href="static/style/main.css">
 </head>
+
 <body>
-<p>
-    Hi, I'm Paul.
-    <b>Software engineer</b> with more than 4 years of working experience.
-</p>
+<input type="checkbox" id="switcher">
+<div class="body">
+    <p>
+        Hi, I'm Paul.
+        <b>Software engineer</b> with more than 4 years of working experience.
+    </p>
 
-<p>
-    I speak fluently <i>French</i>, <i>English</i> and <i>Spanish</i> along with some <i>Catalan</i>.
-</p>
+    <p>
+        I speak fluently <i>French</i>, <i>English</i> and <i>Spanish</i> along with some <i>Catalan</i>.
+    </p>
 
-<ul>
-    <li>Backend developer – DevOps.</li>
-    <li>Writer and culture aficionado.</li>
+    <ul>
+        <li>Backend developer – DevOps.</li>
+        <li>Writer and culture aficionado.</li>
     </ul>
 
-<h2>Experience</h2>
+    <h2>Experience</h2>
 
-<hr>
+    <hr>
 
-Check my <a target="_blank" href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_HI8-Ir3j4SuWOjT7w/view">résumé</a>.
+    <p>
+        Check my <a target="_blank"
+                    href="https://www.canva.com/design/DAGZ8D0pvhc/0Npp_HI8-Ir3j4SuWOjT7w/view">résumé</a>.
+    </p>
 
-<h2>Portfolio</h2>
+    <h2>Portfolio</h2>
 
-<hr>
+    <hr>
 
-<h3>Code</h3>
+    <div class="row">
+        <div class="column">
+            <h3>Code</h3>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://github.com/paul-florentin-charles/bcn-rainfall-models/">Analysis
+                        and
+                        visualisation of Barcelona rainfall</a>.
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/paul-florentin-charles/dereverberation-ml/">Removal of
+                        reverberation via Deep Learning</a>.
+                </li>
+                <li>
+                    <a target="_blank"
+                       href="https://github.com/paul-florentin-charles/TOSCA-Validator/tree/master/frontend/">Frontend
+                        of a webapp validating TOSCA NFV files</a>.
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/paul-florentin-charles/Youtube-Playlist-Maker/">Generate
+                        YouTube
+                        playlist URLs</a>.
+                </li>
+            </ol>
+        </div>
+        <div class="column">
+            <h3>Miscellaneous</h3>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://paul-florentin-charles.github.io/dictionnaire/">French
+                        dictionary</a>.
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.canva.com/design/DAGA6mLTA4k/IG6VHvTyOinJhX-tgxyebg/view">Photobook</a>.
+                </li>
+                <li>
+                    <a target="_blank" href="https://medium.com/@paul.florentin.charles/list/poesie-ef2bda8094b4">French
+                        poetry</a>.
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/pl.chrl/">Photographs of Barcelona & more</a>.
+                </li>
+            </ol>
+        </div>
+    </div>
 
-<ol>
-    <li>
-        <a target="_blank" href="https://github.com/paul-florentin-charles/bcn-rainfall-models/">
-            Analysis and visualisation of Barcelona rainfall
-        </a>.
-    </li>
-    <li>
-        <a target="_blank" href="https://github.com/paul-florentin-charles/dereverberation-ml/">
-            Removal of reverberation via Deep Learning
-        </a>.
-    </li>
-    <li>
-        <a target="_blank" href="https://github.com/paul-florentin-charles/TOSCA-Validator/tree/master/frontend/">
-            Frontend of a webapp validating TOSCA NFV files
-        </a>.
-    </li>
-    <li>
-        <a target="_blank" href="https://github.com/paul-florentin-charles/Youtube-Playlist-Maker/">
-            Generate YouTube playlist URLs
-        </a>.
-    </li>
-</ol>
+    <h2>Want to work together?</h2>
 
-<h3>Miscellaneous</h3>
+    <hr>
 
-<ol>
-    <li>
-        <a target="_blank" href="https://paul-florentin-charles.github.io/dictionnaire/">
-            French dictionary
-        </a>.
-    </li>
-    <li>
-        <a target="_blank" href="https://www.canva.com/design/DAGA6mLTA4k/IG6VHvTyOinJhX-tgxyebg/view">
-            Photobook
-        </a>.
-    </li>
-    <li>
-        <a target="_blank" href="https://medium.com/@paul.florentin.charles/list/poesie-ef2bda8094b4">
-            French poetry
-        </a>.
-    </li>
-</ol>
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.malt.fr/profile/paulcharles/">Malt profile</a>.
+        </li>
+        <li>
+            Write me
+            <a href="mailto:paul.charles@tutanota.com">an email</a>.
+        </li>
+    </ul>
 
-<h2>Want to work together?</h2>
+    <h3>Contact me</h3>
 
-<hr>
+    <form action="https://formsubmit.co/1fac7b1a2dda22da078a09d344d31dec" method="POST" target="_blank">
+        <input type="hidden" name="_subject" value="New contact from personal website!">
 
-<ul>
-    <li>
-        <a target="_blank" href="https://www.malt.fr/profile/paulcharles/">
-            Malt profile
-        </a>.
-    </li>
-    <li>
-        Write me
-        <a href="mailto:paul.charles@tutanota.com">
-            an email
-        </a>.
-    </li>
-</ul>
+        <div class="label">
+            <label for="name">Your name</label>
+        </div>
+        <input type="text" id="name" name="name" required>
 
-<h3>Contact me</h3>
+        <div class="label">
+            <label for="email">Your email</label>
+        </div>
+        <input type="email" id="email" name="email" required>
 
-<form action="https://formsubmit.co/1fac7b1a2dda22da078a09d344d31dec" method="POST" target="_blank">
-    <input type="hidden" name="_subject" value="New contact from personal website!">
+        <div class="label">
+            <label for="message">Your message</label>
+        </div>
+        <textarea id="message" name="body" cols="40" rows="5" required></textarea>
 
-    <label for="name">Your name</label><br>
-    <input type="text" id="name" name="name" required><br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 
-    <label for="email">Your email</label><br>
-    <input type="email" id="email" name="email" required><br>
+    <div id="footer">
+        <hr class="thick">
 
-    <label for="message">Your message</label><br>
-    <textarea id="message" name="body" cols="40" rows="5" required></textarea><br><br>
+        <div style="margin: auto; text-align: center;">
+            <a target="_blank" href="https://www.linkedin.com/in/paul-charles-6a49ba12b/"><img height="25px"
+                                                                                               src="/static/img/linkedin.svg"
+                                                                                               alt="LinkedIn"></a>
+            <a target="_blank" href="https://www.malt.fr/profile/paulcharles/"><img height="25px"
+                                                                                    src="/static/img/malt.svg"
+                                                                                    alt="Malt"></a>
+            <a target="_blank" href="https://github.com/paul-florentin-charles/"><img height="25px"
+                                                                                      src="/static/img/github.svg"
+                                                                                      alt="GitHub"></a>
+            <a target="_blank" href="https://medium.com/@paul.florentin.charles/"><img height="25px"
+                                                                                       src="/static/img/medium.svg"
+                                                                                       alt="Medium"></a>
+            <a target="_blank" href="https://www.instagram.com/pl.chrl/"><img height="25px"
+                                                                              src="/static/img/instagram.svg"
+                                                                              alt="Instagram"></a>
+        </div>
 
-    <button type="submit">Submit</button>
-</form>
-
-<hr>
-
-<div style="margin: auto; text-align: center;">
-    <a target="_blank" href="https://www.linkedin.com/in/paul-charles-6a49ba12b/"><img height="25px" src="/static/img/linkedin.svg" alt="LinkedIn"></a>
-    <a target="_blank" href="https://www.malt.fr/profile/paulcharles/"><img height="25px" src="/static/img/malt.svg" alt="Malt"></a>
-    <a target="_blank" href="https://github.com/paul-florentin-charles/"><img height="25px" src="/static/img/github.svg" alt="GitHub"></a>
-    <a target="_blank" href="https://medium.com/@paul.florentin.charles/"><img height="25px" src="/static/img/medium.svg" alt="Medium"></a>
-</div>
-
-<hr>
-
-<div style="margin: auto; text-align: right;">
-    © 2024 Paul CHARLES
+        <hr class="thick">
+        <div id="copyright">
+            © 2024 Paul CHARLES
+        </div>
+    </div>
 </div>
 </body>
+
 </html>
