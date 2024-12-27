@@ -58,6 +58,7 @@ img.logo {
 }
 
 img.github {
+    padding-right: 0.5em;
     filter: var(--logo-filter, invert(18%) sepia(44%) saturate(2548%) hue-rotate(347deg) brightness(95%) contrast(93%));
 }
 
@@ -86,7 +87,7 @@ article {
 }
 
 nav {
-    font-size: 28px;
+    font-size: 26px;
     background-color: var(--navbar-color, rgba(244, 236, 222, 0.75));
     padding: 0.7em;
     margin-bottom: 25px;
@@ -121,7 +122,7 @@ div.label {
 }
 
 li + li {
-    margin-top: 0.35em;
+    margin-top: 0.5em;
 }
 
 input, textarea {
