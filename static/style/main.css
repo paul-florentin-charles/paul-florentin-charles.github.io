@@ -26,7 +26,7 @@ h3 {
 
 a:link {
     text-decoration: none;
-    color: #d3ad60;
+    color: #b68732;
 }
 
 a:visited {
@@ -39,15 +39,13 @@ a:hover {
 
 hr {
     border: 1px solid var(--title-color, #802a18);
-    border-radius: 1px;
     width: 95%;
     margin-left: 0;
 }
 
 hr.thick {
-    border-color: var(--color, #6c2414);
-    border-width: 2px;
-    margin: 15px 0;
+    border: 2px solid var(--color, #6c2414);
+    margin: 1em 0;
     width: 100%;
 }
 
@@ -56,7 +54,7 @@ img {
 }
 
 img.logo {
-    top: 6px;
+    top: 0.4em;
 }
 
 img.github {
@@ -64,13 +62,17 @@ img.github {
     filter: var(--logo-filter, invert(18%) sepia(44%) saturate(2548%) hue-rotate(347deg) brightness(95%) contrast(93%));
 }
 
+img.github:hover {
+    filter: var(--logo-hover-filter, invert(31%) sepia(24%) saturate(6584%) hue-rotate(352deg) brightness(87%) contrast(99%));
+}
+
 img#me {
-    width: 150px;
+    width: 8em;
     border: 3px solid var(--title-color, #802a18);
-    border-radius: 50px;
+    border-radius: 3.5em;
     float: right;
-    top: 10px;
-    right: 70px;
+    top: 0.9em;
+    right: 4.5em;
 }
 
 article {
@@ -89,24 +91,25 @@ article {
 }
 
 nav {
-    font-size: 26px;
+    font-size: 24px;
     background-color: var(--navbar-color, rgba(244, 236, 222, 0.75));
     padding: 0.7em;
-    margin-bottom: 25px;
-    border-radius: 50px;
-    width: 94%;
+    margin-bottom: 1em;
+    border-radius: 3em;
+    width: 95%;
     text-align: right;
     position: sticky;
-    top: 10px;
+    top: 0.4em;
     z-index: 1;
 }
 
 nav > a {
-    padding: 0 0.35em;
+    padding: 0 0.3em;
 }
 
 nav > a.left {
     float: left;
+    padding-right: 0.6em;
 }
 
 div.row {
@@ -115,7 +118,7 @@ div.row {
 
 div.column {
     flex: 50%;
-    margin: 0.2em;
+    padding: 0.4em;
 }
 
 div.label {
@@ -124,11 +127,11 @@ div.label {
 }
 
 li + li {
-    margin-top: 0.5em;
+    margin-top: 0.6em;
 }
 
 input, textarea {
-    border-radius: 10px;
+    border-radius: 0.6em;
     background-color: var(--color, rgba(244, 236, 222, 0.65));
 }
 
@@ -166,6 +169,7 @@ input, textarea {
     --navbar-color: rgba(238, 230, 220, 0.75);
     --title-color: #eaddc6;
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
+    --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
 }
 
 #switcher:checked ~ * {
@@ -174,11 +178,12 @@ input, textarea {
     --navbar-color: rgba(238, 230, 220, 0.75);
     --title-color: #eaddc6;
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
+    --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
 }
 
 #copyright {
     text-align: right;
-    margin: 15px 15px 0 0;
+    margin: 1em 1em 0 0;
 }
 
 button[type='submit'] {
@@ -186,7 +191,7 @@ button[type='submit'] {
     appearance: none;
     background-color: var(--bg-color, #fff);
     border: 2px solid var(--color, #802a18);
-    border-radius: 15px;
+    border-radius: 0.6em;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -195,7 +200,7 @@ button[type='submit'] {
     font-weight: 600;
     line-height: normal;
     outline: none;
-    padding: 10px 20px;
+    padding: 0.6em 1.2em;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -212,7 +217,7 @@ button[type='submit']:disabled {
 button[type='submit']:hover {
     color: var(--bg-color, #fff);
     background-color: var(--color, #802a18);
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0.5em 1em;
     transform: translateY(-2px);
 }
 
@@ -231,9 +236,7 @@ div.form {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin-top: 30px;
     border: 1px solid whitesmoke;
-    padding: 21px;
 }
 
 :root {
@@ -303,7 +306,6 @@ div.omrs-input-group {
 .omrs-input-filled > textarea:valid + .omrs-input-label {
     top: 0;
     font-size: 0.9375rem;
-    margin-bottom: 32px;;
 }
 
 .omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label,
