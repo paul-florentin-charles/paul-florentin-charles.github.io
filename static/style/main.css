@@ -1,10 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
+:root {
+    --omrs-color-ink-medium-contrast: rgba(122, 97, 23, 0.6);
+    --omrs-color-interaction: #2847ba;
+    --omrs-color-interaction-minus-two: rgba(63, 81, 138, 0.12);
+    --omrs-color-ink-high-contrast: #e1c346;
+}
+
 body {
     font-family: sans-serif;
     font-size: 18px;
     min-height: 100vh;
     margin: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color, #fff);
+    color: var(--color, #000);
+    transition: 250ms;
+}
+
+
+article {
+    padding: 3.5em 6em;
 }
 
 h2, h3 {
@@ -16,7 +39,6 @@ h2 {
     font-weight: 700;
     font-size: 24px;
 }
-
 
 h3 {
     font-weight: 600;
@@ -75,21 +97,6 @@ img#me {
     right: 4.5em;
 }
 
-article {
-    padding: 3.5em 6em;
-}
-
-.body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    background-color: var(--bg-color, #fff);
-    color: var(--color, #000);
-    transition: 250ms;
-}
-
 nav {
     font-size: 24px;
     background-color: var(--navbar-color, rgba(244, 236, 222, 0.75));
@@ -134,6 +141,14 @@ input, textarea {
     border-radius: 0.6em;
     background-color: var(--color, rgba(244, 236, 222, 0.65));
 }
+
+#copyright {
+    text-align: right;
+    margin: 1em 1em 0 0;
+}
+
+
+/* Dark Mode Toggle */
 
 #switcher {
     position: absolute;
@@ -181,10 +196,7 @@ input, textarea {
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
 }
 
-#copyright {
-    text-align: right;
-    margin: 1em 1em 0 0;
-}
+/* Submit Button */
 
 button[type='submit'] {
     color: var(--color, #802a18);
@@ -226,24 +238,13 @@ button[type='submit']:active {
     transform: translateY(0);
 }
 
-<!--
-Form
-
--->
+/* Contact Form */
 
 div.form {
     font-family: "Roboto", sans-serif;
-    display: flex;
+    display: block;
     align-items: flex-start;
     justify-content: space-around;
-    border: 1px solid whitesmoke;
-}
-
-:root {
-    --omrs-color-ink-medium-contrast: rgba(122, 97, 23, 0.6);
-    --omrs-color-interaction: #2847ba;
-    --omrs-color-interaction-minus-two: rgba(63, 81, 138, 0.12);
-    --omrs-color-ink-high-contrast: #e1c346;
 }
 
 /** END: Non Openmrs CSS **/
