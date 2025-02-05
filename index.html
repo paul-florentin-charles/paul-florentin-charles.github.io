@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Charles | Personal Website – Portfolio & more </title>
     <link rel="icon" type="image/jpeg" href="/static/img/me.jpg">
     <link rel="stylesheet" href="static/style/main.css">
@@ -11,25 +12,29 @@
 <input type="checkbox" id="switcher">
 <div id="body" class="body">
     <article>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
-            <a class="left" href="#">Home</a>
             <a class="left" target="_blank" href="https://www.linkedin.com/in/paul-charles-6a49ba12b/">
-                <img height="30px"
+                <img height="28px"
                      src="/static/img/logo/linkedin.svg"
                      alt="LinkedIn">
             </a>
             <a class="left" target="_blank" href="https://www.malt.fr/profile/paulcharles/">
-                <img height="30px"
+                <img height="28px"
                      src="/static/img/logo/malt.svg"
                      alt="Malt">
             </a>
             <a class="left" target="_blank" href="https://github.com/paul-florentin-charles/">
-                <img height="30px"
+                <img height="28px"
                      src="/static/img/logo/github.svg"
                      alt="GitHub">
             </a>
             <a class="left" target="_blank" href="https://linktr.ee/paul_charles">
-                <img height="30px"
+                <img height="28px"
                      src="/static/img/logo/linktree.svg"
                      alt="Linktree">
             </a>
@@ -80,7 +85,7 @@
             <li>
                 <a target="_blank" href="https://github.com/paul-florentin-charles/bcn-rainfall-models/">
                     <img class="logo github"
-                         height="30px"
+                         height="28px"
                          src="/static/img/logo/github.svg"
                          alt="GitHub">
                 </a>
@@ -89,7 +94,7 @@
             <li>
                 <a target="_blank" href="https://github.com/paul-florentin-charles/dereverberation-ml/">
                     <img class="logo github"
-                         height="30px"
+                         height="28px"
                          src="/static/img/logo/github.svg"
                          alt="GitHub">
                 </a>
@@ -99,7 +104,7 @@
                 <a target="_blank"
                    href="https://github.com/paul-florentin-charles/TOSCA-Validator/tree/master/frontend/">
                     <img class="logo github"
-                         height="30px"
+                         height="28px"
                          src="/static/img/logo/github.svg"
                          alt="GitHub">
                 </a>
@@ -108,7 +113,7 @@
             <li>
                 <a target="_blank" href="https://github.com/paul-florentin-charles/Youtube-Playlist-Maker/">
                     <img class="logo github"
-                         height="30px"
+                         height="28px"
                          src="/static/img/logo/github.svg"
                          alt="GitHub">
                 </a>
@@ -159,20 +164,20 @@
                 <input type="hidden" name="_subject" value="New contact from personal website!">
 
                 <div class="omrs-input-group">
-                    <label for="name" class="omrs-input-filled">
-                        <input type="text" id="name" name="name" required>
+                    <label class="omrs-input-filled">
+                        <input type="text" id="name" name="name" required placeholder="Name">
                         <span class="omrs-input-label">Name</span>
                     </label>
                 </div>
                 <div class="omrs-input-group">
-                    <label for="email" class="omrs-input-filled">
-                        <input type="email" id="email" name="email" required>
+                    <label class="omrs-input-filled">
+                        <input type="email" id="email" name="email" required placeholder="Email">
                         <span class="omrs-input-label">Email</span>
                     </label>
                 </div>
                 <div class="omrs-input-group">
-                    <label for="message" class="omrs-input-filled">
-                        <textarea id="message" name="message" required></textarea>
+                    <label class="omrs-input-filled">
+                        <textarea id="message" name="message" required placeholder="Message"></textarea>
                         <span class="omrs-input-label">Message</span>
                     </label>
                 </div>
@@ -187,11 +192,14 @@
             <hr class="thick">
 
             <div id="copyright">
-                © 2024 <a target="_blank" href="https://linktr.ee/paul_charles">Paul CHARLES</a>
+                2024 <a target="_blank" href="https://linktr.ee/paul_charles">Paul CHARLES</a>
             </div>
         </div>
     </article>
 </div>
+
+<script src="static/script/main.js"></script>
+
 </body>
 
 </html>

@@ -27,7 +27,15 @@ body {
 
 
 article {
-    padding: 3.5em 6em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        padding: 3.5em 4em;
+    }
 }
 
 h2, h3 {
@@ -98,7 +106,7 @@ img#me {
 }
 
 nav {
-    font-size: 24px;
+    font-size: 22px;
     background-color: var(--navbar-color, rgba(244, 236, 222, 0.75));
     padding: 0.7em;
     margin-bottom: 1em;
@@ -147,6 +155,73 @@ input, textarea {
     margin: 1em 1em 0 0;
 }
 
+@media screen and (max-width: 767px) {
+    nav {
+        font-size: 18px;
+        padding: 0.5em;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    nav > a.left {
+        float: none;
+        padding: 0 0.3em;
+    }
+
+    div.row {
+        flex-direction: column-reverse;
+    }
+
+    div.column {
+        flex: 100%;
+        padding: 0.4em 0;
+    }
+
+    img#me {
+        width: 6em;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        position: static;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-toggle {
+        position: fixed;
+        right: 0.5em;
+        top: 0.8em;
+        z-index: 1000;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        margin-top: 0;
+        z-index: 999;
+    }
+
+    article {
+        padding-top: 3.5em;
+    }
+}
 
 /* Dark Mode Toggle */
 
@@ -156,29 +231,29 @@ input, textarea {
     -moz-appearance: none;
     appearance: none;
     top: 1rem;
-    right: 1rem;
-    width: 4em;
-    height: 2em;
+    left: 1rem;
+    width: 3em;
+    height: 1.5em;
     background-color: var(--color, #000);
-    border-radius: 2em;
-    font-size: 20px;
+    border-radius: 1.5em;
+    font-size: 16px;
 }
 
 #switcher::after {
     position: absolute;
-    top: 0.25em;
-    left: 0.25em;
-    width: 1.5em;
-    height: 1.5em;
+    top: 0.2em;
+    left: 0.2em;
+    width: 1.1em;
+    height: 1.1em;
     content: "";
     background-color: var(--bg-color, #fff);
-    border-radius: 2em;
+    border-radius: 1.5em;
     transform: translateX(var(--translate, 0));
     transition: 250ms;
 }
 
 #switcher:checked {
-    --translate: 2em;
+    --translate: 1.6em;
     --bg-color: #424242;
     --color: #eee6dc;
     --navbar-color: rgba(238, 230, 220, 0.75);
@@ -196,8 +271,80 @@ input, textarea {
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
 }
 
-/* Submit Button */
+/* Hamburger Menu */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 0.5em;
+}
 
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--color, #000);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 4.5em;
+        z-index: 2;
+    }
+
+    nav {
+        padding: 0;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: auto;
+        max-height: 80vh;
+        background-color: var(--navbar-color, rgba(244, 236, 222, 0.95));
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 1em;
+        transition: right 0.3s ease;
+        border-radius: 0 0 0 10px;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 3.5em;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav > a {
+        display: block;
+        padding: 0.8em 1.5em;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav > a.left {
+        float: none;
+        padding: 0.8em 1.5em;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+/* Submit Button */
 button[type='submit'] {
     color: var(--color, #802a18);
     appearance: none;
@@ -220,6 +367,7 @@ button[type='submit'] {
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
+    max-width: 200px;
 }
 
 button[type='submit']:disabled {
@@ -245,6 +393,8 @@ div.form {
     display: block;
     align-items: flex-start;
     justify-content: space-around;
+    max-width: 600px;
+    margin: 0;
 }
 
 /** END: Non Openmrs CSS **/
@@ -252,6 +402,13 @@ div.omrs-input-group {
     margin-bottom: 1.2rem;
     position: relative;
     width: 15rem;
+}
+
+@media screen and (max-width: 767px) {
+    div.omrs-input-group {
+        margin-bottom: 1.5em;
+        width: 100%;
+    }
 }
 
 /* Input*/
@@ -272,17 +429,24 @@ div.omrs-input-group {
     width: 25rem;
 }
 
-.omrs-input-underlined > input:focus,
+@media screen and (max-width: 767px) {
+    .omrs-input-filled input,
+    .omrs-input-filled textarea {
+        width: 100%;
+        padding: 0.8em;
+        box-sizing: border-box;
+    }
+}
+
 .omrs-input-filled > input:focus,
-.omrs-input-underlined > textarea:focus,
 .omrs-input-filled > textarea:focus {
     outline: none;
 }
 
 .omrs-input-filled > .omrs-input-label {
     position: absolute;
-    top: 0.9375rem;
-    left: 0.875rem;
+    top: 0.6375rem;
+    left: 0.575rem;
     line-height: 147.6%;
     color: var(--omrs-color-ink-medium-contrast);
     transition: top .2s;
@@ -317,4 +481,36 @@ div.omrs-input-group {
 .omrs-input-filled:not(.omrs-input-danger) > input:focus,
 .omrs-input-filled:not(.omrs-input-danger) > textarea:focus {
     border-color: var(--omrs-color-interaction);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.omrs-input-filled > input,
+.omrs-input-filled > textarea {
+    padding: 1.2em 0.8em 0.4em;
+}
+
+.omrs-input-label {
+    position: absolute;
+    top: 0.5em;
+    left: 0.8em;
+    font-size: 0.8em;
+    color: var(--omrs-color-ink-medium-contrast);
+    transform-origin: left top;
+    transition: transform 0.2s;
+}
+
+.omrs-input-filled > input::placeholder,
+.omrs-input-filled > textarea::placeholder {
+    color: transparent;
+}
+
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > textarea:focus + .omrs-input-label,
+.omrs-input-filled > input:not(:placeholder-shown) + .omrs-input-label,
+.omrs-input-filled > textarea:not(:placeholder-shown) + .omrs-input-label {
+    transform: translateY(0em) scale(0.9);
 }
