@@ -55,12 +55,12 @@ h3 {
 
 a:link, a:visited {
     text-decoration: none;
-    color: var(--link-color, #5a190c);
+    color: var(--link-color, #b54d21);
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--hover-link-color, #ba5b48);
+    color: var(--hover-link-color, #752d0e);
 }
 
 hr {
@@ -92,11 +92,11 @@ img.logo {
 img.github {
     top: 0.4em;
     padding-right: 0.5em;
-    filter: var(--logo-filter, invert(18%) sepia(44%) saturate(2548%) hue-rotate(347deg) brightness(95%) contrast(93%));
+    filter: var(--logo-filter, brightness(0) saturate(100%) invert(31%) sepia(99%) saturate(741%) hue-rotate(343deg) brightness(94%) contrast(92%));
 }
 
 img.github:hover {
-    filter: var(--logo-hover-filter, invert(31%) sepia(24%) saturate(6584%) hue-rotate(352deg) brightness(87%) contrast(99%));
+    filter: var(--logo-hover-filter, brightness(0) saturate(100%) invert(18%) sepia(95%) saturate(1024%) hue-rotate(351deg) brightness(94%) contrast(95%));
 }
 
 img#me {
@@ -264,8 +264,9 @@ input, textarea {
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
     --link-color: #cda058;
-    --hover-link-color: #a57424;
+    --hover-link-color: #835a16;
     --input-hover-shadow-color: rgba(211, 178, 88, 0.6);
+    --input-focus-shadow-color: rgba(40, 71, 186, 0.6);
 }
 
 #switcher:checked ~ * {
@@ -276,8 +277,9 @@ input, textarea {
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
     --link-color: #cda058;
-    --hover-link-color: #a57424;
+    --hover-link-color: #835a16;
     --input-hover-shadow-color: rgba(211, 178, 88, 0.6);
+    --input-focus-shadow-color: rgba(40, 71, 186, 0.6);
 }
 
 /* Hamburger Menu */
@@ -306,10 +308,10 @@ input, textarea {
     }
 
     nav {
-        width: 150px;
+        width: 135px;
         position: fixed;
         top: 0;
-        right: -150px;
+        right: -135px;
         height: auto;
         max-height: 80vh;
         background-color: var(--navbar-color, rgba(244, 236, 222, 0.95));
@@ -317,7 +319,7 @@ input, textarea {
         justify-content: flex-start;
         padding: 1em 0 0;
         transition: right 0.3s ease;
-        border-radius: 0 0 0 10px;
+        border-radius: 20px 0 0 20px;
         box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
         margin-top: 3.5em;
     }
@@ -496,6 +498,7 @@ div.omrs-input-group {
 .omrs-input-filled:not(.omrs-input-danger) > input:focus,
 .omrs-input-filled:not(.omrs-input-danger) > textarea:focus {
     border-color: var(--omrs-color-interaction);
+    box-shadow: 0 0.1rem 0.2rem var(--input-focus-shadow-color, rgba(15, 37, 122, 0.6));
 }
 
 textarea {
