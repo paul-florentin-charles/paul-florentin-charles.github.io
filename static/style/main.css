@@ -3,7 +3,7 @@
 :root {
     --omrs-color-ink-medium-contrast: rgba(122, 97, 23, 0.6);
     --omrs-color-interaction: #2847ba;
-    --omrs-color-interaction-minus-two: rgba(63, 81, 138, 0.12);
+    --omrs-color-interaction-minus-two: rgba(217, 221, 228, 0.38);
     --omrs-color-ink-high-contrast: #e1c346;
 }
 
@@ -53,17 +53,14 @@ h3 {
     font-size: 18px;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
-    color: #b68732;
-}
-
-a:visited {
-    color: #dd7e57;
+    color: var(--link-color, #5a190c);
 }
 
 a:hover {
-    color: #a13a23;
+    text-decoration: underline;
+    color: var(--hover-link-color, #ba5b48);
 }
 
 hr {
@@ -248,7 +245,7 @@ input, textarea {
 #switcher::after {
     position: absolute;
     top: 0.2em;
-    left: 0.2em;
+    left: 0.15em;
     width: 1.1em;
     height: 1.1em;
     content: "";
@@ -266,6 +263,9 @@ input, textarea {
     --title-color: #eaddc6;
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
+    --link-color: #cda058;
+    --hover-link-color: #a57424;
+    --input-hover-shadow-color: rgba(211, 178, 88, 0.6);
 }
 
 #switcher:checked ~ * {
@@ -275,6 +275,9 @@ input, textarea {
     --title-color: #eaddc6;
     --logo-filter: invert(96%) sepia(8%) saturate(893%) hue-rotate(327deg) brightness(95%) contrast(92%);
     --logo-hover-filter: invert(62%) sepia(13%) saturate(896%) hue-rotate(5deg) brightness(96%) contrast(93%);
+    --link-color: #cda058;
+    --hover-link-color: #a57424;
+    --input-hover-shadow-color: rgba(211, 178, 88, 0.6);
 }
 
 /* Hamburger Menu */
@@ -303,7 +306,6 @@ input, textarea {
     }
 
     nav {
-        padding: 0;
         width: 150px;
         position: fixed;
         top: 0;
@@ -313,7 +315,7 @@ input, textarea {
         background-color: var(--navbar-color, rgba(244, 236, 222, 0.95));
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 1em;
+        padding: 1em 0 0;
         transition: right 0.3s ease;
         border-radius: 0 0 0 10px;
         box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -427,7 +429,7 @@ div.omrs-input-group {
     border: none;
     border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
     width: 100%;
-    height: 2rem;
+    height: 1.5rem;
     font-size: 0.9625rem;
     padding-left: 0.875rem;
     line-height: 147.6%;
@@ -444,6 +446,7 @@ div.omrs-input-group {
     .omrs-input-filled input,
     .omrs-input-filled textarea {
         width: 100%;
+        height: 2.5rem;
         padding: 0.8em;
         box-sizing: border-box;
     }
@@ -474,6 +477,7 @@ div.omrs-input-group {
 .omrs-input-filled > input:hover, .omrs-input-filled > textarea:hover {
     background: var(--omrs-color-interaction-minus-two);
     border-color: var(--omrs-color-ink-high-contrast);
+    box-shadow: 0 0.1rem 0.2rem var(--input-hover-shadow-color, rgba(122, 97, 23, 0.6));
 }
 
 .omrs-input-filled > input:focus + .omrs-input-label,
@@ -523,5 +527,5 @@ textarea {
 .omrs-input-filled > textarea:focus + .omrs-input-label,
 .omrs-input-filled > input:not(:placeholder-shown) + .omrs-input-label,
 .omrs-input-filled > textarea:not(:placeholder-shown) + .omrs-input-label {
-    transform: translateY(-0.2em) scale(0.9);
+    transform: translateY(-0.1em) scale(0.9);
 }
