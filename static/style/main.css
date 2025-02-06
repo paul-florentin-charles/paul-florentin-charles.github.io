@@ -304,10 +304,10 @@ input, textarea {
 
     nav {
         padding: 0;
-        width: 250px;
+        width: 150px;
         position: fixed;
         top: 0;
-        right: -250px;
+        right: -150px;
         height: auto;
         max-height: 80vh;
         background-color: var(--navbar-color, rgba(244, 236, 222, 0.95));
@@ -411,14 +411,13 @@ div.form {
 
 /** END: Non Openmrs CSS **/
 div.omrs-input-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     position: relative;
     width: 15rem;
 }
 
 @media screen and (max-width: 767px) {
     div.omrs-input-group {
-        margin-bottom: 1.5em;
         width: 100%;
     }
 }
@@ -524,5 +523,5 @@ textarea {
 .omrs-input-filled > textarea:focus + .omrs-input-label,
 .omrs-input-filled > input:not(:placeholder-shown) + .omrs-input-label,
 .omrs-input-filled > textarea:not(:placeholder-shown) + .omrs-input-label {
-    transform: translateY(0em) scale(0.9);
+    transform: translateY(-0.2em) scale(0.9);
 }
