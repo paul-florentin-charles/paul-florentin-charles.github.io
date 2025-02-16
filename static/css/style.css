@@ -85,7 +85,7 @@ img.logo {
 
 @media screen and (max-width: 767px) {
     img.logo {
-        height: 26px;
+        height: 25px;
     }
 }
 
@@ -160,7 +160,7 @@ input, textarea {
 
 @media screen and (max-width: 767px) {
     nav {
-        font-size: 16px;
+        font-size: 15px;
         padding: 0.5em;
         width: 90%;
         text-align: center;
@@ -193,15 +193,15 @@ input, textarea {
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     body {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -432,7 +432,7 @@ div.omrs-input-group {
     border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
     width: 100%;
     height: 1.5rem;
-    font-size: 0.9625rem;
+    font-size: 14px;
     padding-left: 0.875rem;
     line-height: 147.6%;
     padding-top: 0.825rem;
@@ -470,7 +470,7 @@ div.omrs-input-group {
 
 
 .omrs-input-filled > .omrs-input-helper {
-    font-size: 0.9375rem;
+    font-size: 14px;
     color: var(--omrs-color-ink-medium-contrast);
     letter-spacing: 0.0275rem;
     margin: 0.125rem 0.875rem;
@@ -487,7 +487,7 @@ div.omrs-input-group {
 .omrs-input-filled > textarea:focus + .omrs-input-label,
 .omrs-input-filled > textarea:valid + .omrs-input-label {
     top: 0;
-    font-size: 0.9375rem;
+    font-size: 14px;
 }
 
 .omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label,
@@ -515,7 +515,7 @@ textarea {
     position: absolute;
     top: 0.5em;
     left: 0.8em;
-    font-size: 0.8em;
+    font-size: 14px;
     color: var(--omrs-color-ink-medium-contrast);
     transform-origin: left top;
     transition: transform 0.2s;
